@@ -287,7 +287,7 @@ function circleShape(){
   context4.stroke();
   
   context4.lineWidth = 1;
-  context4.strokeStyle = "purple";
+  context4.fillStyle = "purple";
   context4.beginPath();
   context4.moveTo(125, 350);
   context4.lineTo(150, 350);
@@ -296,7 +296,7 @@ function circleShape(){
   context4.lineTo(125, 390);
   context4.lineTo(110, 370);
   context4.lineTo(125, 350);
-  context4.stroke();
+  context4.fill();
   
   
   
