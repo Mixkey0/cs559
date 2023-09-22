@@ -1,9 +1,9 @@
 
 var canvas = document.getElementById('My Canvas');
 var slider1 = document.getElementById('slider1');
-slider1.value=0
+slider1.value=0;
 var slider2 = document.getElementById('slider2');
-slider2.value=5
+slider2.value=5;
 var context = canvas.getContext('2d');
 //fillrect
 var context2 = canvas.getContext('2d');
@@ -26,24 +26,24 @@ var y3 = 0;
 var x4 = 50;
 var y4 = 0;
 
-var winDis = 0
+var winDis = 0;
 function draw(){ 
   
   if(slider1.value == 310){
-    rec()
+    rec();
     
   }
   else{
-    move()
+    move();
     sliderRec();
     context3.font = "13px serif";
     context3.fillText("Slide The First Slider to the End to Start the Game", 25, 480);
-    circleShape()
+    circleShape();
   }
 }
 
 function move(){
-  canvas.width = canvas.width
+  canvas.width = canvas.width;
   var dx = slider1.value;
   context2.save();
   context2.translate(dx,100);
@@ -156,7 +156,7 @@ function rec() {
     }
     else{
       if(x != 1001){
-        x = 1000
+        x = 1000;
         y = 0;
       }
     }
@@ -166,7 +166,7 @@ function rec() {
     }
     else{
       if(x2 != 1001){
-        x2 = 1000
+        x2 = 1000;
         y2 = 0;
       }
     }
@@ -176,7 +176,7 @@ function rec() {
     }
     else{
       if(x3 != 1001){
-        x3 = 1000
+        x3 = 1000;
         y3 = 0;
       }
     }
@@ -186,7 +186,7 @@ function rec() {
     }
     else{
       if(x4 != 1001){
-        x4 = 1000
+        x4 = 1000;
         y4 = 0;
       }
     }
@@ -245,17 +245,17 @@ function sliderShape(){
   context4.lineWidth = 3;
   context4.strokeStyle = "red";
   context4.beginPath();
-  context4.moveTo(25, 400)
-  context4.lineTo(40, 425)
-  context4.lineTo(25, 450)
+  context4.moveTo(25, 400);
+  context4.lineTo(40, 425);
+  context4.lineTo(25, 450);
   
-  context4.moveTo(35, 400)
-  context4.lineTo(50, 425)
-  context4.lineTo(35, 450)
+  context4.moveTo(35, 400);
+  context4.lineTo(50, 425);
+  context4.lineTo(35, 450);
   
-  context4.moveTo(45, 400)
-  context4.lineTo(60, 425)
-  context4.lineTo(45, 450)
+  context4.moveTo(45, 400);
+  context4.lineTo(60, 425);
+  context4.lineTo(45, 450);
   
   context4.stroke();
   
@@ -280,22 +280,22 @@ function circleShape(){
   context4.lineWidth = 1;
   context4.strokeStyle = "black";
   context4.beginPath();
-  context4.moveTo(30, 360)
-  context4.lineTo(40, 360)
-  context4.moveTo(60, 360)
-  context4.lineTo(70, 360)
+  context4.moveTo(30, 360);
+  context4.lineTo(40, 360);
+  context4.moveTo(60, 360);
+  context4.lineTo(70, 360);
   context4.stroke();
   
   context4.lineWidth = 1;
   context4.strokeStyle = "purple";
   context4.beginPath();
-  context4.moveTo(125, 350)
-  context4.lineTo(150, 350)
-  context4.lineTo(165, 370)
-  context4.lineTo(150, 390)
-  context4.lineTo(125, 390)
-  context4.lineTo(110, 370)
-  context4.lineTo(125, 350)
+  context4.moveTo(125, 350);
+  context4.lineTo(150, 350);
+  context4.lineTo(165, 370);
+  context4.lineTo(150, 390);
+  context4.lineTo(125, 390);
+  context4.lineTo(110, 370);
+  context4.lineTo(125, 350);
   context4.stroke();
   
   
