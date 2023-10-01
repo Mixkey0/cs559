@@ -72,7 +72,7 @@ function setup() {
 
     function background(){
       context.font = "13px serif";
-      context.fillText("Slowly move the first slider to help the people go to other side", 25, 550);
+      context.fillText("Slowly move the first slider to help the people to go to other side", 25, 550);
       context.beginPath();
       context.fillStyle = "orange";
       context.fillRect(0, 70, 700, 20);
